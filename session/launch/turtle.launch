@@ -1,0 +1,5 @@
+<launch>
+	<rosparam command="load" file="$(find session)/param/var.yaml" />
+	<node name = "turtlesim" pkg = "turtlesim" type = "turtlesim_node" output="screen" />
+	<node name = "velocity" pkg = "session" type = "bike.py" output="screen" />
+</launch>
